@@ -1,4 +1,6 @@
 import env from "env-var";
+import "dotenv/config";
+
 
 export default {
     port: env.get("PORT").default(3000).asPortNumber(),
